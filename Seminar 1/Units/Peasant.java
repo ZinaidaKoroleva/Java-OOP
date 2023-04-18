@@ -11,4 +11,13 @@ public class Peasant extends Unit{
     }
     void run(){
     }
+
+    @Override
+    public void step() {
+       
+    }
+    @Override
+    public String getInfo() {
+       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage;
+    }
 }

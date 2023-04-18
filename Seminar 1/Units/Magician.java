@@ -1,6 +1,6 @@
 package Units;
 
-public class Magician extends Unit{
+public abstract class Magician extends Unit{
     int mana, maxMana;
 
     public Magician(String name,int hp, int maxHP, int speed, int damage, int mana, int maxMana){

@@ -12,4 +12,14 @@ public class Monk extends Magician{
     void heal(){
 
     }
+
+    @Override
+    public void step() {
+       
+    }
+    @Override
+    public String getInfo() {
+       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + 
+       damage + " Mana: " + mana + " Max mana: " + maxMana;
+    }
 }

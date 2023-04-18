@@ -1,6 +1,6 @@
 package Units;
 
-public class Unit {
+public abstract class Unit implements GameInterface{
     protected String name;
     protected int speed,damage, hp, maxHP;
 

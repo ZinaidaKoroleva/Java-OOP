@@ -9,9 +9,19 @@ public class Thief extends Warrior {
     public String toString(){
     return "Thief "+ name;
     }
+
     void dodge(){
     }
 
     void trueStrike(){   
+    }
+
+    @Override
+    public void step() {
+       
+    }
+    @Override
+    public String getInfo() {
+       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage + " Armor: " + armor;
     }
 }

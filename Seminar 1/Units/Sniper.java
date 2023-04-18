@@ -11,4 +11,14 @@ public class Sniper extends Shooter{
     void headShot(){
         
     }
+    @Override
+    public void step() {
+       
+    }
+    @Override
+    public String getInfo() {
+       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage +
+       " Distanse: " + distanse + " Max count bullet: " + maxcoutBullet + " Current bullet: " + currentCountBullet +
+       " Accuracy: " + accuracy;
+    }
 }
