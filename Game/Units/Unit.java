@@ -1,30 +1,26 @@
 package Units;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public abstract class Unit implements GameInterface{
     protected String name;
     protected int speed,damage, hp, maxHP;
+    protected ArrayList<Unit> team;
 
-    public Unit(String name, int hp, int maxHP, int speed, int damage) {
+    protected Unit(ArrayList<Unit> team, String name, int hp, int maxHP, int speed, int damage) {
+        this.team = team;
         this.name = name;
         this.hp = hp;
         this.maxHP = maxHP;
+        if(new Random().nextBoolean()) this.hp/=2;
         this.speed = speed;
         this.damage = damage;
     }
     
-    public void attack(){
+   @Override
+   public void step(){
 
-    }
-    public void await(){
-        
-    }
-    public void defend(){
-        
-    }
-    public void walk(){
-        
-    }
-    void dead(){
-        
-    }
+   }
+
 }

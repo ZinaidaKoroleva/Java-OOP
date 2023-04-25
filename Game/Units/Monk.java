@@ -1,10 +1,13 @@
 package Units;
 
+import java.util.ArrayList;
+
 public class Monk extends Magician{
     
-    public Monk(String name){
-        super(name, 20, 20, 3, 1, 20,20);
+    public Monk(ArrayList<Unit> team, String name){
+        super(team, name, 20, 20, 3, 1, 20,20);
     }
+
     @Override
     public String toString(){
     return "Monk "+ name;

@@ -1,9 +1,11 @@
 package Units;
 
+import java.util.ArrayList;
+
 public class Peasant extends Unit{
 
-    public Peasant(String name) {
-        super(name, 8, 8, 1, 1);
+    public Peasant(ArrayList<Unit> team, String name) {
+        super(team, name, 8, 8, 1, 1);
     }
     @Override
     public String toString(){
