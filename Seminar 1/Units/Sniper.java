@@ -17,7 +17,7 @@ public class Sniper extends Shooter{
     }
     @Override
     public String getInfo() {
-       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage +
+       return name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage +
        " Distanse: " + distanse + " Max count bullet: " + maxcoutBullet + " Current bullet: " + currentCountBullet +
        " Accuracy: " + accuracy;
     }

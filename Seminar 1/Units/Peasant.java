@@ -18,6 +18,6 @@ public class Peasant extends Unit{
     }
     @Override
     public String getInfo() {
-       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage;
+       return name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage;
     }
 }

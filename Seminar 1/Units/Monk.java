@@ -19,7 +19,7 @@ public class Monk extends Magician{
     }
     @Override
     public String getInfo() {
-       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + 
+       return name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + 
        damage + " Mana: " + mana + " Max mana: " + maxMana;
     }
 }
