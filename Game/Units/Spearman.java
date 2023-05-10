@@ -1,8 +1,10 @@
 package Units;
 
+import java.util.ArrayList;
+
 public class Spearman extends Warrior{
-    public Spearman(String name){
-        super(name, 18, 18, 2, 2,2);
+    public Spearman(ArrayList<Unit> team, String name){
+        super(team, name, 18, 18, 2, 2,2);
     }
     @Override
     public String toString(){
@@ -17,6 +19,6 @@ public class Spearman extends Warrior{
     }
     @Override
     public String getInfo() {
-       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage + " Armor: " + armor;
+       return name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage + " Armor: " + armor;
     }
 }

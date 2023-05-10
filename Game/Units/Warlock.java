@@ -1,8 +1,10 @@
 package Units;
 
+import java.util.ArrayList;
+
 public class Warlock extends Magician{
-    public Warlock(String name){
-        super(name, 15, 15, 2, 1, 30,30);
+    public Warlock(ArrayList<Unit> team, String name){
+        super(team, name, 15, 15, 2, 1, 30,30);
     }
     @Override
     public String toString(){
@@ -19,7 +21,7 @@ public class Warlock extends Magician{
     }
     @Override
     public String getInfo() {
-       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + 
+       return name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + 
        damage + " Mana: " + mana + " Max mana: " + maxMana;
     }
 }

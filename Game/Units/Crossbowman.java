@@ -1,8 +1,10 @@
 package Units;
 
+import java.util.ArrayList;
+
 public class Crossbowman extends Shooter{
-    public Crossbowman(String name){
-        super(name, 12, 12, 2, 3, 3, 15, 15, 0.5f);
+    public Crossbowman(ArrayList<Unit> team, String name){
+        super(team, name, 12, 12, 2, 3, 3, 15, 15, 0.5f);
     }
     @Override
     public String toString(){
@@ -18,7 +20,7 @@ public class Crossbowman extends Shooter{
     
     @Override
     public String getInfo() {
-       return name + "HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage +
+       return name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage +
        " Distanse: " + distanse + " Max count bullet: " + maxcoutBullet + " Current bullet: " + currentCountBullet +
        " Accuracy: " + accuracy;
     }
