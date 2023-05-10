@@ -6,19 +6,19 @@ import Units.*;
 public class Game {
     public static void main(String[] args) {
         Sniper neo = new Sniper("Neo");
-        System.out.println(neo);
+        // System.out.println(neo);
         Crossbowman legolas = new Crossbowman("Legolas");
-        System.out.println(legolas.getInfo());
+        // System.out.println(legolas.getInfo());
         Monk shaolin = new Monk("Shao-lin");
-        System.out.println(shaolin.getInfo());
+        // System.out.println(shaolin.getInfo());
         Peasant mikola = new Peasant("Mikola");
-        System.out.println(mikola.getInfo());
+        // System.out.println(mikola.getInfo());
         Spearman gomer = new Spearman("Gomer");
-        System.out.println(gomer);
+        // System.out.println(gomer);
         Thief assasin = new Thief("Assasin");
-        System.out.println(assasin);
+        // System.out.println(assasin);
         Warlock merlin = new Warlock("Merlin");
-        System.out.println(merlin);
+        // System.out.println(merlin);
 
         ArrayList <Unit> team1 = new ArrayList<>();
         for (int i  = 0; i < 10; i++) {
@@ -56,9 +56,10 @@ public class Game {
             }
         }
         System.out.println("Team 1: ");
-        team1.forEach(n -> System.out.println(n.getInfo()));
+        team1.forEach(unit -> System.out.println(unit.getInfo()));
         System.out.println("Team 2: ");
-        team2.forEach(n -> System.out.println(n.getInfo()));
+        team2.forEach(unit -> System.out.println(unit.getInfo()));
+        team2.forEach(unit -> unit.step());
     }
     private static String getName(){
         return String.valueOf(Names.values()[new Random().nextInt(Names.values().length)]);
