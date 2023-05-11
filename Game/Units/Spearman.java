@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Spearman extends Warrior{
     public Spearman(ArrayList<Unit> team, String name){
-        super(team, name, 18, 18, 2, 2,2);
+        super(3,team, name, 18, 18, 2, 2,2);
     }
     @Override
     public String toString(){
@@ -19,6 +19,6 @@ public class Spearman extends Warrior{
     }
     @Override
     public String getInfo() {
-       return name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage + " Armor: " + armor;
+       return "Spearman "+ name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage + " Armor: " + armor;
     }
 }

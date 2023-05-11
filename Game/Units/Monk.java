@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Monk extends Magician{
     
     public Monk(ArrayList<Unit> team, String name){
-        super(team, name, 20, 20, 3, 1, 20,20);
+        super(2,team, name, 20, 20, 3, 1, 20,20);
     }
 
     @Override
@@ -22,7 +22,7 @@ public class Monk extends Magician{
     }
     @Override
     public String getInfo() {
-       return name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + 
+       return "Monk "+ name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + 
        damage + " Mana: " + mana + " Max mana: " + maxMana;
     }
 }

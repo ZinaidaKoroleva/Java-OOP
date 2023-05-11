@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Thief extends Warrior {
     
     public Thief(ArrayList<Unit> team, String name){
-        super(team, name, 12, 12, 3, 2,1);
+        super(3,team, name, 12, 12, 3, 2,1);
     }
     @Override
     public String toString(){
@@ -24,6 +24,6 @@ public class Thief extends Warrior {
     }
     @Override
     public String getInfo() {
-       return name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage + " Armor: " + armor;
+       return "Thief "+  name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage + " Armor: " + armor;
     }
 }

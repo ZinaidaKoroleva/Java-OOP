@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Random;
 
 import Units.*;
@@ -21,7 +22,7 @@ public class Game {
         // System.out.println(merlin);
 
         ArrayList <Unit> team1 = new ArrayList<>();
-        for (int i  = 0; i < 10; i++) {
+        for (int i  = 0; i < 5; i++) {
             switch (new Random().nextInt(4)){
                 case 0:
                     team1.add(new Sniper(team1, getName()));
@@ -42,7 +43,7 @@ public class Game {
         }
 
         ArrayList <Unit> team2 = new ArrayList<>();
-        for (int i  = 0; i < 10; i++) {
+        for (int i  = 0; i < 5; i++) {
             switch (new Random().nextInt(5)){
                 case 0:
                     team2.add(new Spearman(team2, getName()));
@@ -66,6 +67,13 @@ public class Game {
         System.out.println("Team 2: ");
         team2.forEach(n -> System.out.println(n.getInfo()));
         team1.forEach(n-> n.step());
+
+        System.out.println("Team 1 step: ");
+        team1.forEach(n -> System.out.println(n.getInfo()));
+        System.out.println("Team 2 step: ");
+        team2.forEach(n -> System.out.println(n.getInfo()));
+        team2.sort(Unit::compareTo);
+        System.out.println(team2);
     }
 
     private static String getName(){

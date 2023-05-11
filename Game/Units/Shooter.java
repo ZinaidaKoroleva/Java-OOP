@@ -9,9 +9,9 @@ public abstract class Shooter extends Unit{
 
 
 
-public Shooter(ArrayList<Unit> team, String name, int hp, int maxHP, int speed, int damage, int distanse,
+public Shooter(int initiative, ArrayList<Unit> team, String name, int hp, int maxHP, int speed, int damage, int distanse,
         int maxcoutBullet, int currentCountBullet, float accuracy) {
-    super(team, name, hp, maxHP, speed, damage);
+    super(initiative, team, name, hp, maxHP, speed, damage);
     this.distanse = distanse;
     this.maxcoutBullet = maxcoutBullet;
     this.currentCountBullet = currentCountBullet;
