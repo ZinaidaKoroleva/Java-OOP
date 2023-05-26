@@ -3,8 +3,8 @@ package Units;
 import java.util.ArrayList;
 
 public class Warlock extends Magician{
-    public Warlock(ArrayList<Unit> team, String name){
-        super(2,team, name, 15, 15, 2, 1, 30,30);
+    public Warlock(ArrayList<Unit> team, String name, int x, int y){
+        super(2,team, name, 15, 15, 2, 1, 30,30, x, y);
     }
     @Override
     public String toString(){

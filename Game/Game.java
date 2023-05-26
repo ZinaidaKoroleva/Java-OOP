@@ -22,43 +22,43 @@ public class Game {
         // System.out.println(merlin);
 
         ArrayList <Unit> team1 = new ArrayList<>();
-        for (int i  = 0; i < 5; i++) {
+        for (int i  = 1; i < 11; i++) {
             switch (new Random().nextInt(4)){
                 case 0:
-                    team1.add(new Sniper(team1, getName()));
+                    team1.add(new Sniper(team1, getName()), 1, i);
                     break;
                 case 1:
-                    team1.add(new Crossbowman(team1, getName()));
+                    team1.add(new Crossbowman(team1, getName()), 1, i);
                     break;
                 case 2:
-                    team1.add(new Monk(team1, getName()));
+                    team1.add(new Monk(team1, getName()), 1, i);
                     break;
                 case 3:
-                    team1.add(new Warlock(team1, getName()));
+                    team1.add(new Warlock(team1, getName()), 1, i);
                     break;
                 case 4:
-                    team1.add(new Peasant(team1, getName()));
+                    team1.add(new Peasant(team1, getName()), 1, i);
                     break;    
             }
         }
 
         ArrayList <Unit> team2 = new ArrayList<>();
-        for (int i  = 0; i < 5; i++) {
+        for (int i  = 1; i < 11; i++) {
             switch (new Random().nextInt(5)){
                 case 0:
-                    team2.add(new Spearman(team2, getName()));
+                    team2.add(new Spearman(team2, getName()), 10, i);
                     break;
                 case 1:
-                    team2.add(new Crossbowman(team2, getName()));
+                    team2.add(new Crossbowman(team2, getName()), 10, i);
                     break;
                 case 2:
-                    team2.add(new Thief(team2, getName()));
+                    team2.add(new Thief(team2, getName()), 10, i);
                     break;
                 case 3:
-                    team2.add(new Warlock(team2, getName()));
+                    team2.add(new Warlock(team2, getName()), 10, i);
                     break; 
                 case 4:
-                    team2.add(new Peasant(team2, getName()));
+                    team2.add(new Peasant(team2, getName()), 10, i);
                     break;  
             }
         }

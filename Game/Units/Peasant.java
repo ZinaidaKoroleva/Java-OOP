@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Peasant extends Unit{
 
-    public Peasant(ArrayList<Unit> team, String name) {
-        super(1,team, name, 8, 8, 1, 1);
+    public Peasant(ArrayList<Unit> team, String name, int x, int y) {
+        super(1,team, name, 8, 8, 1, 1, x, y);
     }
     @Override
     public String toString(){

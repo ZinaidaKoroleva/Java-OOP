@@ -3,8 +3,8 @@ package Units;
 import java.util.ArrayList;
 
 public class Crossbowman extends Shooter{
-    public Crossbowman(ArrayList<Unit> team, String name){
-        super(4,team, name, 12, 12, 2, 3, 3, 15, 15, 0.5f);
+    public Crossbowman(ArrayList<Unit> team, String name, int x, int y){
+        super(4,team, name, 12, 12, 2, 3, 3, 15, 15, 0.5f, x, y);
     }
     @Override
     public String toString(){
@@ -13,10 +13,7 @@ public class Crossbowman extends Shooter{
     void recharge(){
 
     }
-    @Override
-    public void step() {
-       
-    }
+
     
     @Override
     public String getInfo() {

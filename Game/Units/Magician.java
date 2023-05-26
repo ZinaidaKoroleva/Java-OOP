@@ -4,8 +4,8 @@ import java.util.ArrayList;
 public abstract class Magician extends Unit{
     int mana, maxMana;
 
-    public Magician(int initiative, ArrayList<Unit> team, String name,int hp, int maxHP, int speed, int damage, int mana, int maxMana){
-        super(initiative,team, name, hp, maxHP, speed, damage);
+    public Magician(int initiative, ArrayList<Unit> team, String name,int hp, int maxHP, int speed, int damage, int mana, int maxMana, int x, int y){
+        super(initiative,team, name, hp, maxHP, speed, damage, x, y);
         this.mana = mana;
         this.maxMana = maxMana;
     }

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Thief extends Warrior {
     
-    public Thief(ArrayList<Unit> team, String name){
-        super(3,team, name, 12, 12, 3, 2,1);
+    public Thief(ArrayList<Unit> team, String name, int x, int y){
+        super(3,team, name, 12, 12, 3, 2,1, x, y);
     }
     @Override
     public String toString(){

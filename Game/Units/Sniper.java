@@ -3,8 +3,8 @@ package Units;
 import java.util.ArrayList;
 
 public class Sniper extends Shooter{
-    public Sniper( ArrayList<Unit> team, String name){
-        super(4, team, name, 10, 10, 2, 2, 6, 15, 15, 0.5f);
+    public Sniper( ArrayList<Unit> team, String name, int x, int y){
+        super(4, team, name, 10, 10, 2, 2, 6, 15, 15, 0.5f, x, y);
     }
     @Override
     public String toString(){
@@ -13,10 +13,7 @@ public class Sniper extends Shooter{
     void headShot(){
         
     }
-    @Override
-    public void step() {
-       
-    }
+
     @Override
     public String getInfo() {
        return "Sniper "+ name + " HP: " + hp + " MaxHP: " + maxHP + " Speed: " + speed + " Damage: " + damage +

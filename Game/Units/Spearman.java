@@ -3,8 +3,8 @@ package Units;
 import java.util.ArrayList;
 
 public class Spearman extends Warrior{
-    public Spearman(ArrayList<Unit> team, String name){
-        super(3,team, name, 18, 18, 2, 2,2);
+    public Spearman(ArrayList<Unit> team, String name, int x, int y){
+        super(3,team, name, 18, 18, 2, 2,2, x, y);
     }
     @Override
     public String toString(){
